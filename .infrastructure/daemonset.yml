@@ -18,7 +18,7 @@ spec:
           command:
             - /bin/sh
             - -c
-            - "while true; do curl http://todoapp-service/api; sleep 5; done"
+            - "while true; do curl http://todoapp-service.mateapp.svc.cluster.local/api; sleep 5; done"
           resources:
             requests:
               memory: "64Mi"
